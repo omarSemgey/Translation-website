@@ -78,7 +78,7 @@ async function translate(){
         toText.value = 'Translating...';
         translateBtn.innerText = 'Translating...'
 
-        let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}&de=omar.semgey@gmail.com`;
+        let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
         await fetch(apiUrl)
         .then(res => res.json())
         .then(data => {
